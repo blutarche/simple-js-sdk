@@ -4,6 +4,8 @@
   "description": "A simple JavaScript SDK.",
   "main": "./dist/index.js",
   "scripts": {
+    "build": "babel src --out-dir dist --source-maps && yarn run webpack",
+    "webpack": "webpack",
     "test": "jest",
     "test:watch": "nodemon --watch src --watch test --exec 'yarn run test'",
     "doc": "jsdoc src -d docs",
@@ -32,7 +34,9 @@
     "eslint-plugin-babel": "^5.2.1",
     "eslint-plugin-import": "^2.14.0",
     "jsdoc": "^3.5.5",
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.18.4",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
   },
   "author": "Aikdanai Sidhikosol",
   "license": "MIT",
